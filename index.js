@@ -7,8 +7,9 @@ var program = require('commander'),
 program
   .arguments('<url>')
   .description('Queries an API and outputs issue counts by issue type')
-  .option('-t, --types <required>', 'list of issue types to traverse e.g. bug, "bug|story|task" -- MAKE SURE TO WRAP IN QUOTES OR TO ESCAPE THE PIPE CHARACTERS!')
+  .option('--types <required>', 'list of issue types to traverse e.g. bug, "bug|story|task" -- MAKE SURE TO WRAP IN QUOTES OR TO ESCAPE THE PIPE CHARACTERS!')
   .action(function(url, options) {
+    debugger;
     if (typeof options.types === 'undefined') {
       console.log("No --types given! See 'walker --help' for the syntax.");
       process.exit(1);
