@@ -1,0 +1,23 @@
+{
+  "name": "walker",
+  "version": "1.0.0",
+  "description": "Atlassian API Screening Exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "walker": "./index.js"
+  },
+  "author": "Jake Haber",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "lodash": "^4.13.1",
+    "mocha": "^2.5.3",
+    "nock": "^8.0.0",
+    "q": "^1.4.1",
+    "restler": "^3.4.0",
+    "test-console": "^1.0.0"
+  }
+}
